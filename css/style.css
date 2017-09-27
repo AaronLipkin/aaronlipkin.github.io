@@ -147,3 +147,7 @@ footer p {
 em {
 	font-weight: bold;
 }
+
+footer img {
+	height: 4vh;
+}
