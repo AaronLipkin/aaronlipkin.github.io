@@ -1,95 +1,68 @@
 body {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-@font-face {
-font-family: "Lemon";
-src: url("../LemonMilk.otf") format("opentype")
-}
-
-@font-face {
-font-family: "Lemon-Light";
-src: url("../LemonMilklight.otf") format("opentype")
-}
-
-section {
-
-}
-.body {
-	max-width: 100vw;
-	background: url('../IMG_1955.JPG');
-	background-size: contain;
-}
-
-#section-1 {
-	max-width: 100vw;
-	background: url('../name-overlay.png') no-repeat center fixed;
-	background-size: cover;
 	height: 100vh;
-}
-
-@media only screen 
-  and (max-device-width: 500px) { 
-	#section-1 {
-	background: url('../vertoverlay.png') no-repeat center fixed;
-	background-size: auto 100%;
-}
-}
-
-#section-2 {
-	max-width: 100vw;
-	height: 17vh;
-	background: black;
-}
-
-#section-3 {
-	height: 78vh;
-	width: 100%;
-	position: relative;
-	background: white;
+	background: url('../images/yosemitehd.jpg');
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	overflow-y: auto;
-	align-items: center;
-	z-index: 1000;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: none;
 }
 
-#scroll {
-	max-width: 100vw;
+
+@font-face {
+	font-family: "Lemon";
+	src: url("fonts/LemonMilk.otf") format("opentype")
+}
+
+@font-face {
+	font-family: "Lemon-Light";
+	src: url("fonts/LemonMilklight.otf") format("opentype")
+}
+
+#main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 300vh;
+	overflow-y: scroll;
+}
+
+#headline {
+	width: 80%;
+	color: black;
 	position: relative;
-	bottom: 10px;
+	top: 25%;
 	left: 50%;
-	transform: translateX(-50%);
-}
-
-h1 {
-	font-family: 'Lemon';
-	font-size: 15vw;
+	transform: translate(-50%,-50%);
 	text-align: center;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	color: white;
-
 }
 
-h2 {
-	font-family: Lemon-Light;
-	font-size: 3vw;
+#name {
+	font-family: "Lemon";
+	font-weight: bold;
+	font-size: 120px;
+}
+
+#subheader {
+	font-size: 25px;
+	margin-top: 15px;
+	font-style: italic; 
 }
 
 #arrow {
-	position: fixed;
-	height: 10%;
-	margin-top: 92vh;
+	position: relative;
+	height: 5%;
+	margin-top: 75vh;
 	left: 50%;
 	transform: translateX(-50%);
 	animation: 1s infinite alternate bounce;
 	animation-timing-function: cubic-bezier(0,0,0.25,1);
 }
+
+#arrow path {
+	fill: #00BDFC;
+}
+
 
 @keyframes bounce {
 	from {
@@ -100,38 +73,29 @@ h2 {
 	}
 }
 
-.proj {
-	width:500px;
-	text-align: center;
-	margin-top: 15px;
-	cursor: pointer;
+#portfolio {
+	width: 100%;
+	height: 100vh;
+	background-color: #001217;
 }
 
-.screenshot {
-	width: 60%;
+#aboutme {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/RoadPretty.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-@media (min-width: 875px) {
-.proj {
-	width:500px;
-	text-align: center;
-	margin-top: 10px;
-}
-
-.screenshot {
-	width: 400px;
-}
-}
-
-
-
-a {
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
+#landing {
+	height: 100vh;
 }
 
 footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
 	text-align: center;
 	height: 5vh;
 	background-color: black;
@@ -139,15 +103,87 @@ footer {
 }
 
 footer p {
-	position: relative;
+	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 em {
 	font-weight: bold;
 }
 
-footer p img {
-	height: 15px;
+
+.links {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translate(-50%,-50%);
+}
+
+footer svg	{
+	height: 30px;
+	margin: 0px 5px;
+}
+
+footer svg path {
+	opacity: 1;
+}
+
+footer svg:hover path {
+	transition-duration: .5s;
+	fill: #E7A115;
+}
+
+
+.navbar {
+	background: rgba(0,18,23,.8);
+	border:none;
+}
+
+.navbar-default .navbar-nav li a {
+	font-family: 'Helvetica';
+	color: white;
+	padding-bottom: 3px;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	color: #00BDFC;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #00BDFC;
+	transition-duration: .5s;
+}
+
+.navbar-default .navbar-nav li a:focus {
+	color: #00BDFC;
+}
+
+.content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	transform: translate(-50%,-50%);
+
+	font-family: "Helvetica";
+	color: white;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.me {
+	height: 550px;
+	border: 3px solid #E7A115;
+	border-radius: 3px;
+}
+
+h1 {
+	font-family: "Lemon";
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
 }
