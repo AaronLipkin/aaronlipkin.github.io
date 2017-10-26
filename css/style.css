@@ -111,7 +111,7 @@ body {
     background-size: 380%; 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1281px) {
 	#aboutme {
 		background-attachment: fixed;
 		background-size: cover;
