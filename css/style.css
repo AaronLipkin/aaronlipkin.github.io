@@ -46,6 +46,7 @@ body {
 	font-size: 25px;
 	margin-top: 15px;
 	font-style: italic; 
+	font-weight: bold;
 }
 
 .arrow {
@@ -340,6 +341,10 @@ and (orientation: portrait) {
 	footer svg:hover path {
 		transition-duration: .5s;
 		fill: #E7A115;
+	}
+
+	#landing-arrow {
+		top: 70vh;
 	}
 
 }
