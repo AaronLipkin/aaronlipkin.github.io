@@ -64,7 +64,7 @@ body {
 }
 
 #port-arrow {
-	top: 80vh;
+	top: 55vh;
 }
 
 #port-arrow path {
@@ -246,6 +246,35 @@ h1 {
 	fill: #00BDFC;
 }
 
+#port-title {
+	position: relative;
+	top: 15%;
+	color: white;
+	font-size: 110px;
+}
+
+#port-items {
+	display: flex;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	justify-content: space-around;
+	width: 80%;
+}
+
+.port-item {
+	height: 14vw;
+}
+
+.port-item path {
+	fill:white;
+}
+
+#port-items svg:hover path {
+	transition-duration: .5s;
+	fill: #00BDFC;
+}
 
 @media only screen 
 and (max-device-width: 600px)
@@ -346,5 +375,27 @@ and (orientation: portrait) {
 	#landing-arrow {
 		top: 70vh;
 	}
+
+	#port-items {
+	display: block;
+	position: relative;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	justify-content: space-around;
+	width: 30vw;
+}
+
+.port-item {
+	display: block;
+	height: 25vw;
+	margin: 50px auto;
+
+
+}
+
+#port-arrow {
+	top: 29vh;
+}
 
 }
