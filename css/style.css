@@ -64,7 +64,7 @@ body {
 }
 
 #port-arrow {
-	top: 55vh;
+	top: 65vh;
 }
 
 #port-arrow path {
@@ -256,7 +256,7 @@ h1 {
 #port-items {
 	display: flex;
 	position: relative;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	justify-content: space-around;
