@@ -104,7 +104,6 @@ body {
 #landing {
 	height: 100vh;
 	background: url('../images/yosemitehd.jpg');
-	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: 380%; 
 	-moz-background-size: 380%; 
@@ -114,12 +113,12 @@ body {
 
 @media (min-width: 1281px) {
 	#aboutme {
-		background-attachment: fixed;
+		background-attachment: static;
 		background-size: cover;
 	}
 
 	#landing {
-		background-attachment: fixed;
+		background-attachment: static;
 		background-size: cover;
 	}
 }
@@ -227,6 +226,9 @@ h1 {
 	max-width: 500px;
 	font-size: 25px;
 	margin: 0px 20px;
+	line-height: 1.4;
+	font-family: "Roboto";
+	text-align: justify;
 }
 
 .mobile-navigation {
