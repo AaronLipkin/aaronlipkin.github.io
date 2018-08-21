@@ -174,7 +174,7 @@ footer svg:hover path {
 }
 
 .navbar-default .navbar-nav li a {
-	font-family: 'Helvetica';
+	font-family: 'Quicksand';
 	color: white;
 	padding-bottom: 3px;
 }
@@ -227,7 +227,7 @@ h1 {
 	font-size: 25px;
 	margin: 0px 20px;
 	line-height: 1.4;
-	font-family: "Roboto";
+	font-family: 'Quicksand', sans-serif;
 	text-align: justify;
 }
 
